@@ -12,9 +12,18 @@ public class Person {
     }
 
 
-    public Person(int id, String name, String phoneNumber, String email) {
+    @Override
+    public String toString() {
+        return "Person{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                ", email='" + email + '\'' +
+                '}';
+    }
+
+    public Person(String name, String phoneNumber, String email) {
         this();// Automatically increments the id
-        this.id = id;
         this.name = name;
         this.phoneNumber = phoneNumber;
         this.email = email;
