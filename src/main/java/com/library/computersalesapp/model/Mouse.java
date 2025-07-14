@@ -1,18 +1,16 @@
 package com.library.computersalesapp.model;
 
 public class Mouse extends InputDevice {
-    private final int idMouse;
-    private static int mouseCounter;
+  private final int idMouse;
+  private static int mouseCounter;
 
-    public Mouse(String inputType, String brand) {
-        super(inputType, brand);
-        idMouse = ++mouseCounter;
-    }
+  public Mouse(String inputType, String brand) {
+    super(inputType, brand);
+    idMouse = ++mouseCounter;
+  }
 
-    @Override
-    public String toString() {
-        return "Mouse{" +
-                "idMouse=" + idMouse +
-                "} " + super.toString();
-    }
+  @Override
+  public String toString() {
+    return "Mouse{" + "idMouse=" + idMouse + "} " + super.toString();
+  }
 }
